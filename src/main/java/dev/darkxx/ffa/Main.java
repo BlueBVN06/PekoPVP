@@ -2,6 +2,7 @@ package dev.darkxx.ffa;
 
 import dev.darkxx.ffa.bstats.Metrics;
 import dev.darkxx.ffa.combat.CombatTagger;
+import dev.darkxx.ffa.commands.DiampotCommand;
 import dev.darkxx.ffa.commands.NethpotCommand;
 import dev.darkxx.ffa.commands.SpeedCommand;
 import dev.darkxx.ffa.commands.MaceCommand;
@@ -192,6 +193,7 @@ public final class Main extends JavaPlugin {
         getCommand("beastmenu").setExecutor(new BeastCommand());
         getCommand("macemenu").setExecutor(new MaceCommand());
         getCommand("speedmenu").setExecutor(new SpeedCommand());
+        getCommand("nethpotmenu").setExecutor(new DiampotCommand());
         getCommand("nethpotmenu").setExecutor(new NethpotCommand());
     }
 
