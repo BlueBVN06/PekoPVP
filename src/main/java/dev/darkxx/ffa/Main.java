@@ -66,7 +66,7 @@ public final class Main extends JavaPlugin {
         GuiManager.register(this);
         saveDefaultConfig();
         config = getConfig();
-        prefix = config.getString("prefix", "&b&lFFAA &7|&r");
+        prefix = config.getString("prefix", "&b&lFFA &7|&r");
         DatabaseManager.connect();
         kitsFolder = KitManager.createKitsFolder();
         Register();
