@@ -76,7 +76,7 @@ public class SpeedMenu extends GuiBuilder {
             String arenaCmd = "ffa arenas warp " + playerName + " " + worldName;
             Bukkit.dispatchCommand(Bukkit.getConsoleSender(), kitCmd);
             Bukkit.dispatchCommand(Bukkit.getConsoleSender(), arenaCmd);
-            player.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, Integer.MAX_VALUE, 1, true, true));
+            //player.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, Integer.MAX_VALUE, 1, true, true));
             player.playSound(player.getLocation(), Sound.UI_LOOM_TAKE_RESULT, 1.0f, 1.0f);
             });
         });
@@ -91,7 +91,7 @@ public class SpeedMenu extends GuiBuilder {
             String arenaCmd = "ffa coolarenas warp " + playerName + " " + "Coolarena";
             Bukkit.dispatchCommand(Bukkit.getConsoleSender(), kitCmd);
             Bukkit.dispatchCommand(Bukkit.getConsoleSender(), arenaCmd);
-            player.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, Integer.MAX_VALUE, 1, true, true));
+            //player.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, Integer.MAX_VALUE, 1, true, true));
             player.playSound(player.getLocation(), Sound.UI_LOOM_TAKE_RESULT, 1.0f, 1.0f);
             });
         });
