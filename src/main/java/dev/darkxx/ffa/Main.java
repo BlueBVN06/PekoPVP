@@ -193,7 +193,7 @@ public final class Main extends JavaPlugin {
         getCommand("beastmenu").setExecutor(new BeastCommand());
         getCommand("macemenu").setExecutor(new MaceCommand());
         getCommand("speedmenu").setExecutor(new SpeedCommand());
-        getCommand("nethpotmenu").setExecutor(new DiampotCommand());
+        getCommand("diappotmenu").setExecutor(new DiampotCommand());
         getCommand("nethpotmenu").setExecutor(new NethpotCommand());
     }
 
