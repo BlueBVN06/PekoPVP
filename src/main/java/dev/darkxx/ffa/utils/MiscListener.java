@@ -309,7 +309,10 @@ public class MiscListener implements Listener {
     
     @EventHandler
     public void cancelFoodLoose(FoodLevelChangeEvent event) {
-        event.setCancelled(true);
+        World world = event.getEntity().getWorld();
+        if (world.getName().equals(world)) {
+            event.setCancelled(true);
+        }
     }
     
     public static void heal(Player player) {
