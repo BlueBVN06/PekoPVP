@@ -124,7 +124,9 @@ public class MiscListener implements Listener {
             String kitCmd = "ffa kits give " + playerName + " " + kit;
             String arenaCmd = "ffa arenas warp " + playerName + " " + arena;
             Bukkit.dispatchCommand(Bukkit.getConsoleSender(), arenaCmd);
-            Bukkit.dispatchCommand(Bukkit.getConsoleSender(), kitCmd);
+            Bukkit.getScheduler().runTaskLater(main, () -> {
+                    Bukkit.dispatchCommand(Bukkit.getConsoleSender(), kitCmd);
+                }, 4L);
 
             String messageType = Main.getInstance().getConfig().getString("quick-respawn.message-type", "action bar");
             String message = Main.getInstance().getConfig().getString("quick-respawn.message", "&aTeleported to your last location.");
