@@ -86,8 +86,8 @@ public class NethpotMenu extends GuiBuilder {
             String playerName = player.getName();
             String kitCmd = "ffa kits give " + playerName + " " + "nethpot";
             String arenaCmd = "ffa coolarenas warp " + playerName + " " + "Nethpotcoolarena";
-            Bukkit.dispatchCommand(Bukkit.getConsoleSender(), kitCmd);
             Bukkit.dispatchCommand(Bukkit.getConsoleSender(), arenaCmd);
+            Bukkit.dispatchCommand(Bukkit.getConsoleSender(), kitCmd);
             player.playSound(player.getLocation(), Sound.UI_LOOM_TAKE_RESULT, 1.0f, 1.0f);
             });
         });
