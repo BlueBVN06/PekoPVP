@@ -82,8 +82,8 @@ public class MaceMenu extends GuiBuilder {
             String playerName = player.getName();
             String kitCmd = "ffa kits give " + playerName + " " + "mace";
             String arenaCmd = "ffa coolarenas warp " + playerName + " " + "Macecoolarena";
-            Bukkit.dispatchCommand(Bukkit.getConsoleSender(), kitCmd);
             Bukkit.dispatchCommand(Bukkit.getConsoleSender(), arenaCmd);
+            Bukkit.dispatchCommand(Bukkit.getConsoleSender(), kitCmd);
             player.playSound(player.getLocation(), Sound.UI_LOOM_TAKE_RESULT, 1.0f, 1.0f);
             });
         });
